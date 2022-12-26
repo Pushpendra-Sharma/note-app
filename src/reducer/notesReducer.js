@@ -1,0 +1,3 @@
+const notesReducer = ()=>{};
+
+export { notesReducer };
