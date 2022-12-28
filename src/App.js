@@ -1,11 +1,14 @@
 import './App.css';
 import { Nav, SideBar, NewNote, NoteList } from './components';
+import { useThemeContext } from './context';
 
 function App() {
+  const { darkTheme } = useThemeContext();
+
   return (
-    <div className='App'>
+    <div className={darkTheme ? 'darkMode' : 'lightMode'}>
       <Nav />
-      <div className='flex'>
+      <div className='flex pt-4'>
         <SideBar />
         <div className='flex flex-col flex-wrap gap-4'>
           <NewNote />

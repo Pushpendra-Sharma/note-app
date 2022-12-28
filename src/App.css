@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.darkMode {
+  color: white;
+  background-color: #121212;
+}
+
+
+.lightMode {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
