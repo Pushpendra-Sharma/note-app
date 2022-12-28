@@ -8,9 +8,9 @@ function App() {
   return (
     <div className={darkTheme ? 'darkMode' : 'lightMode'}>
       <Nav />
-      <div className='flex pt-4'>
+      <div className='flex justify-between pt-4'>
         <SideBar />
-        <div className='flex flex-col flex-wrap gap-4'>
+        <div className='flex flex-col flex-wrap items-center gap-4 p-4'>
           <NewNote />
           <NoteList />
         </div>
